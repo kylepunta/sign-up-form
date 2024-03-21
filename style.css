@@ -7,14 +7,20 @@ body {
     width: 100vw;
     overflow: hidden;
     display: flex;
+    background-color: rgb(60, 60, 60);
+    margin: 0 auto;
 }
 
 .background-image-container {
     background-color: aqua;
     flex: 1;
+    background-image: url('./ocean-wave.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .form-body {
-    background-color: aquamarine;
+    background-color: rgb(250, 250, 250);
     flex: 2;
 }
