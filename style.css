@@ -6,4 +6,15 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    display: flex;
+}
+
+.background-image-container {
+    background-color: aqua;
+    flex: 1;
+}
+
+.form-body {
+    background-color: aquamarine;
+    flex: 2;
 }
