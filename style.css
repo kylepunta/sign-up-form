@@ -13,6 +13,11 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+@font-face {
+    font-family: norse-bold;
+    src: url('./Norse-Bold.otf');
+}
+
 .background-image-container {
     background-color: aqua;
     flex: 1;
@@ -36,6 +41,9 @@ body {
 }
 
 .image-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #00000021;
     height: 160px;
     /* min-width: 100px; */
@@ -47,7 +55,11 @@ body {
     height: 132px;
     width: 100px;
     position: relative;
-    top: 10px;
-    left: 126px;
+    right: 4px;
+}
 
+h1 {
+    font-family: norse-bold, sans-serif;
+    font-size: 6rem;
+    color: white;
 }
