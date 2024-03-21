@@ -119,3 +119,7 @@ h2 {
     position: relative;
     margin-left: 40px;
 }
+
+form {
+    position: relative;
+}
