@@ -133,6 +133,7 @@ form div {
 
 label {
     display: block;
+    color: #2d2d2d;
 }
 
 form div p {
@@ -142,8 +143,12 @@ form div p {
 input {
     width: 270px;
     height: 30px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 4px;
+    outline: none;
+    padding: 8px;
+    font-size: 1rem;
+    color: #444;
 }
 
 button[type='submit'] {
@@ -167,6 +172,12 @@ button[type='submit']:active {
     box-shadow: 0px 0px #6e8aa2;
 }
 
+button[type='submit']:hover {
+    cursor: pointer;
+    background-color: #5f778c;
+    border-color: #5f778c;
+}
+
 .submit-section p + p {
     position: relative;
     top: 42px;
@@ -178,4 +189,9 @@ p a {
     text-decoration: none;
     color: #6e8aa2;
     font-weight: bold;
+}
+
+input:focus {
+    border-color: #6e8aa2;
+    box-shadow: 1px 1px #6e8aa2;
 }
