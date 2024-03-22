@@ -155,14 +155,27 @@ button[type='submit'] {
     color: white;
     font-size: 1rem;
     font-weight: bold;
-    border: 1px solid #86a8c6;
+    border: 1px solid #6e8aa2;
     border-radius: 6px;
-    background-color: #86a8c6;
-    box-shadow: 2px 2px #86a8c6;
+    background-color: #6e8aa2;
+    box-shadow: 2px 2px #6e8aa2;
 }
 
 button[type='submit']:active {
     /* transform: translateX(2px); */
     transform: translateY(4px);
-    box-shadow: 0px 0px #617182;
+    box-shadow: 0px 0px #6e8aa2;
+}
+
+.submit-section p + p {
+    position: relative;
+    top: 42px;
+    left: 46px;
+    font-size: 1.1rem;
+}
+
+p a {
+    text-decoration: none;
+    color: #6e8aa2;
+    font-weight: bold;
 }
