@@ -195,3 +195,7 @@ input:focus {
     border-color: #6e8aa2;
     box-shadow: 1px 1px #6e8aa2;
 }
+
+.error {
+    border-color: red;
+}
