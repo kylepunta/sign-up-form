@@ -23,7 +23,6 @@ body {
 }
 
 .background-image-container {
-    background-color: aqua;
     flex: 1;
     background-image: url('./ocean-wave.jpg');
     background-repeat: no-repeat;
@@ -96,7 +95,7 @@ h1 {
     max-width: 740px;
 }
 
-p:not(.caption) {
+.paragraph-container p {
     font-size: 24px;
     text-align: left;
     text-wrap: wrap;
@@ -122,4 +121,23 @@ h2 {
 
 form {
     position: relative;
+}
+
+form div {
+    display: flex;
+    /* justify-content: space-around; */
+    width: 800px;
+    gap: 114px;
+}
+
+label {
+    display: block;
+}
+
+form div p {
+    margin-left: 40px;
+}
+
+input {
+    width: 270px;
 }
