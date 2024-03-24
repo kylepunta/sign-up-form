@@ -209,11 +209,15 @@ p a {
     font-weight: bold;
 }
 
-input:focus {
+input:not(#confirm_pwd):focus {
     border-color: #6e8aa2;
     box-shadow: 1px 1px #6e8aa2;
 }
 
 .error {
     border-color: red;
+}
+
+.valid {
+    border-color: green;
 }
