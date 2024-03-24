@@ -1,27 +1,16 @@
-const pwdInputs = document.querySelectorAll('[type="password"]');
-const pwd = document.querySelector('[name="password"]');
-const confirmPwd = document.querySelector('[name="confirmpassword"]');
-const submit = document.querySelector('button');
+const userPassword = document.querySelector('#pwd');
+const confirmPassword = document.querySelector('#confirm_pwd');
+const passwords = document.querySelectorAll('[type="password"]');
+console.log(passwords);
 
-// if (pwd != confirmPwd){
-//     pwdInputs.forEach((password) => {
-//         password.classList.add('error');
-//     });
-// }
-
-console.log(pwd.value);
-// console.log(confirmPwd.value);
-
-// submit.addEventListener('click', () => {
-//     console.log(pwd.value);
-//     console.log(confirmPwd.value);
-// });
-
-pwdInputs.forEach((password) => {
+passwords.forEach((password) => {
     password.addEventListener('input', () => {
-        console.log(password.value);
-        if (pwd.value === confirmPwd.value){
-            confirmPwd.classList.add('error');
+        if (userPassword.value !== confirmPassword.value){
+            confirmPassword.classList.add('error');
+        }
+        else {
+            confirmPassword.classList.remove('error');
+            confirmPassword.classList.add('valid');
         };
     });
 });
