@@ -7,12 +7,13 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
     display: flex;
-    background-color: rgb(60, 60, 60);
-    margin: 0 auto;
+    background-color: var(--form-bg-color);
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -31,6 +32,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 
 .form-body {
@@ -38,6 +43,10 @@ body {
     flex: 2;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 
 .caption {
@@ -88,6 +97,7 @@ h1 {
 .form-container {
     flex: 2;
     background-color: var(--form-bg-color);
+    position: relative;
 }
 
 .italic-text {
@@ -110,8 +120,11 @@ h1 {
 .form-banner {
     position: absolute;
     background-color: white;
-    width: 100%;
+    /* width: 1028px; */
     height: 320px;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 h2 {
